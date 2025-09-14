@@ -1,8 +1,8 @@
 # basic_operations.py
 # ALX: Basic Arithmetic Exercise
 
-number1 = 12
-number2 = 6
+number1 = 10
+number2 = 5
 
 addition = number1 + number2
 subtraction = number1 - number2
