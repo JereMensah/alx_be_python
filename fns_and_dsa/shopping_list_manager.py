@@ -7,29 +7,22 @@ def display_menu():
 
 def main():
     shopping_list = []
-
     while True:
         display_menu()
-        choice = int(input("Enter your choice: "))   # <-- must be int
+        choice = int(input("Enter your choice: "))   # must be int here
 
         if choice == 1:
             item = input("Enter item to add: ")
             shopping_list.append(item)
-            print(f"{item} added to shopping list.")
         elif choice == 2:
             item = input("Enter item to remove: ")
             if item in shopping_list:
                 shopping_list.remove(item)
-                print(f"{item} removed from shopping list.")
             else:
-                print(f"{item} not found in shopping list.")
+                print("Item not found in shopping list.")
         elif choice == 3:
-            if shopping_list:
-                print("Shopping List:")
-                for item in shopping_list:
-                    print(item)
-            else:
-                print("Shopping list is empty.")
+            for item in shopping_list:
+                print(item)
         elif choice == 4:
             print("Goodbye!")
             break
@@ -38,3 +31,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
